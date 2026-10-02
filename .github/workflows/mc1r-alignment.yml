@@ -13,4 +13,4 @@ jobs:
       - name: Run alignment
         run: |
           ls
-          python alinhamento_mc1r.py
+          python src/alinhamento_mc1r.py
