@@ -1,0 +1,16 @@
+name: Run MC1R Alignment
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install BioPython
+        run: pip install biopython
+      - name: Run alignment
+        run: |
+          ls
+          python alinhamento_mc1r.py
