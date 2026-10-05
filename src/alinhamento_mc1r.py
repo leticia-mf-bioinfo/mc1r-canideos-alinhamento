@@ -1,4 +1,4 @@
-from Bio import pairwise2
+from Bio.Align import PairwiseAligner
 seq_dog = ("ATGTCTGGGCAGGGCCCCCAGAGAAGGCTGCTGGGCTCTCTCAATGGCACCTCCCCAGCCACCCCTCACT"
 "TCGAGCTGGCTGCCAACCAGACCGGGCCCCGGTGCCTGGAGGTGTCCATTCCCGACGGGCTGTTCCTCAG"
 "CCTGGGGCTGGTGAGCGTTGTGGAAAATGTGCTGGTGGTGGCCGCCATTGCCAAGAACCGCAACCTGCAC"
@@ -41,6 +41,10 @@ seq_wolf = ("ATGTCTGGGCAGGGCCCCCAGAGAAGGCTGCTGGGCTCTCTCAATGGCACCTCCCCAGCCACCCCTC
 "CTTCTTGCACCTCTCACTCATGGTCCTCTGCCCTCAACACCCCATCTGTGGCTGCGTCTTTCAGAACTTC"
 "AACCTCTTCCTCACCCTCATCATCTGCAACTCCATCATTGACCCCTTCATCTACGCCTTCCGCAGCCAGG"
 "AGCTCCGAAAGACTCTCCAAGAGGTAGTGCTATGTTCCTGGTGA")
-print(pairwise2.align.globalxx(seq_dog,seq_wolf))
-print(pairwise2.align.globalxx(seq_dog,seq_dingo))
-print(pairwise2.align.globalxx(seq_dingo,seq_wolf))
+aligner = PairwiseAligner()
+with open("results_mc1r.txt", "w") as out:
+    for name, a, b in [("dog_vs_wolf", seq_dog, seq_wolf), ("dog_vs_dingo", seq_dog, seq_dingo), ("dingo_vs_wolf", seq_dingo, seq_wolf)]:
+        result = aligner.align(a, b)
+        out.write(f"{name} score={result[0].score}\n")
+        out.write(str(result[0]) + "\n")
+        print(result[0])
