@@ -4,7 +4,7 @@ Análise do gene melanocortin 1 receptor (MC1R) em canídeos com Python e Biopyt
 O projeto visa alinhar o gene MC1R do cão doméstico, dingo e lobo mexicano, a fim de comparar as sequências de nucleotídeos e analisar a conservação do gene.
 ## Método
 Utilizou-se a base de dados National Center of Biotechnology Information (NCBI) para coletar as sequências do gene MC1R nas três espécies de canídeos. As sequências obtidas foram lançadas no Clustal Omega para encontrar os Single Nucleotide Polymorphisms (SNPs). O código foi feito em Python para comparar (PairwiseAligner) e obter o score do alinhamento, depois foi inserido no Google Colab para ser executado em Biopython.
-**Softwares utilizados:**
+###Softwares utilizados:
 - Clustal Omega
 - NCBI
 - Google Colab
