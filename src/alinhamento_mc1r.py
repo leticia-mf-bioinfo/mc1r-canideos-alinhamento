@@ -48,3 +48,20 @@ with open("results_mc1r.txt", "w") as out:
         out.write(f"{name} score={result[0].score}\n")
         out.write(str(result[0]) + "\n")
         print(result[0])
+alinhamento_dog_dingo = aligner.align(seq_dog, seq_dingo)[0]
+seq_alinhada_dog = str(alinhamento_dog_dingo[0])
+seq_alinhada_dingo = str(alinhamento_dog_dingo[1])
+
+iguais = 0
+total = len(seq_alinhada_dog)
+
+for base_dog, base_dingo in zip(seq_alinhada_dog, seq_alinhada_dingo):
+    if base_dog == base_dingo:
+        iguais += 1
+
+identidade = iguais / total * 100
+print(f"Iguais: {iguais} de {total}")
+print(f"Identidade: {identidade:.2f}%")
+with open("results_mc1r.txt", "a") as out:
+    out.write(f"\nIguais: {iguais} de {total}\n")
+    out.write(f"Identidade: {identidade:.2f}%\n")
