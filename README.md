@@ -11,5 +11,5 @@ Utilizou-se a base de dados National Center of Biotechnology Information (NCBI) 
 - Google Colab
 - Python + Biopython (PairwiseAligner)
 ## Resultados
-O alinhamento mostrou alta conservação do gene (>95% de identidade), com SNPs pontuais (`.`) que explicam a variação de cor entre o cão doméstico, o dingo e o lobo mexicano. A variação de cor está ligada à produção de eumelanina e feomelanina pelo gene MC1R.
+O alinhamento mostrou alta conservação do gene, sendo maior que 95% de identidade com SNPs pontuais (`.`) que explicam a variação de cor entre o cão doméstico, o dingo e o lobo mexicano. A variação de cor está ligada à produção de eumelanina e feomelanina pelo gene MC1R.
 Arquivos gerados: `src/alinhamento_mc1r.py` e `src/results_mc1r.txt`
