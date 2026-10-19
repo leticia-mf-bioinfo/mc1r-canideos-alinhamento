@@ -50,14 +50,13 @@ with open("src/results_mc1r.txt", "w") as out:
         result = aligner.align(a, b)
         out.write(f"{name} score={result[0].score}\n")
         out.write(str(result[0]) + "\n\n")
-        
-        # calcula identidade
+
         seqA = str(result[0][0])
         seqB = str(result[0][1])
-        iguais = sum(1 for x,y in zip(seqA, seqB) if x==y)
+        iguais = sum(1 for x, y in zip(seqA, seqB) if x == y)
         total = len(seqA)
         identidade = iguais / total * 100
-        
+
         out.write(f"{name} iguais {iguais} de {total}\n")
         out.write(f"{name} Identidade: {identidade:.2f}%\n\n")
 
