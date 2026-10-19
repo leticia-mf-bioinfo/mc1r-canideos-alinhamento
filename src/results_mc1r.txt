@@ -193,3 +193,6 @@ target          900 CGCAGCCAGGAGCTCCGAAAGACTCTCCAAGAGGTAGTGCTATGTTCCTGGTGA 954
                 900 |||||||||||||||||||||||||||||||||||||||||||||||||||||| 954
 query           900 CGCAGCCAGGAGCTCCGAAAGACTCTCCAAGAGGTAGTGCTATGTTCCTGGTGA 954
 
+dog_vs_wolf: 99.79%
+dog_vs_dingo: 99.90%
+dingo_vs_wolf: 99.90%
