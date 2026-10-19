@@ -45,7 +45,7 @@ from Bio.Align import PairwiseAligner
 
 aligner = PairwiseAligner()
 
-with open("results_mc1r.txt", "w") as out:
+with open("src/results_mc1r.txt", "w") as out:
     for name,a,b in [("dog_vs_wolf", seq_dog, seq_wolf), ("dog_vs_dingo", seq_dog, seq_dingo)]:
         result = aligner.align(a,b)
         out.write(f"{name} score={result[0].score}\n")
