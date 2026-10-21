@@ -14,14 +14,14 @@ Utilizou-se a base de dados National Center for Biotechnology Information (NCBI)
 O alinhamento mostrou alta conservação do gene, sendo maior que 99% de identidade entre os três canídeos. Há SNP A>T e C>G nas posições 180 e 840, respectivamente. A ocorrência de SNPs explica a variação de cor entre o cão doméstico, o dingo e o lobo mexicano. O gene MC1R possui 954 pares de base (bp).
 
 **Alinhamento do gene**
-- Cão vs lobo: 99,90% (1 SNP, 0,1% de diferença)
+- Cão vs lobo: 99,90% (1 SNP, 0,10% de diferença)
 - Cão vs dingo: 99,79% (2 SNPs, 0,21% de diferença)
-- Dingo vs lobo: 99,90% (1 SNP, 0,1% de diferença)
+- Dingo vs lobo: 99,90% (1 SNP, 0,10% de diferença)
  
 ### Arquivos com os resultados 
 - Código e resultados: `src/alinhamento_mc1r.py`, `src/results_mc1r.txt`
 - Figuras finais (fundo branco): `docs/finais/`
-    - `guide tree.png` e `phylogram.png`
+    - `guide_tree.png` e `phylogram.png`
     - `snp_trecho1.png` e `snp_trecho2.png`
     - `percentual_identidade.png`
 - Figuras originais: `docs/originais/`
