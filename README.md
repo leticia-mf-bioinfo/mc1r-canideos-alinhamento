@@ -18,7 +18,7 @@ O alinhamento mostrou alta conservação do gene, sendo maior que 99% de identid
 - Cão vs dingo: 99,79% (2 SNPs, 0,21% de diferença)
 - Dingo vs lobo: 99,90% (1 SNP, 0,1% de diferença)
  
-### Saídas do projeto
+### Arquivos com os resultados 
 - Código e resultados: `src/alinhamento_mc1r.py`, `src/results_mc1r.txt`
 - Figuras finais (fundo branco): `docs/finais/`
     - `guide tree.png` e `phylogram.png`
