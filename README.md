@@ -20,7 +20,7 @@ O alinhamento mostrou alta conservação do gene, sendo maior que 99% de identid
  
 ### Arquivos com os resultados 
 - Código e resultados: `src/alinhamento_mc1r.py`, `src/results_mc1r.txt`
-- Figuras finais (fundo branco): `docs/finais/`
+- Figuras finais: `docs/finais/`
     - `guide_tree.png` e `phylogram.png`
     - `snp_trecho1.png` e `snp_trecho2.png`
     - `percentual_identidade.png`
